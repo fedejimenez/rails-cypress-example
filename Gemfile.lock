@@ -88,6 +88,9 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.7)
     crass (1.0.6)
+    cypress-on-rails (1.8.0)
+      rack
+    database_cleaner (1.8.5)
     deface (1.5.3)
       nokogiri (>= 1.6)
       polyglot
@@ -370,6 +373,8 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
+  cypress-on-rails (~> 1.0)
+  database_cleaner
   jbuilder (~> 2.7)
   listen (~> 3.2)
   mini_racer

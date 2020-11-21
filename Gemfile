@@ -47,6 +47,11 @@ group :development do
   gem 'solidus_auth_devise'
 end
 
+group :test, :development do
+  gem 'cypress-on-rails', '~> 1.0'
+  gem 'database_cleaner'
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
