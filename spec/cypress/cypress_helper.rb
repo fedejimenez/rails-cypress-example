@@ -31,3 +31,10 @@ CypressOnRails::SmartFactoryWrapper.configure(
       Rails.root.join('spec', 'factories', '**', '*.rb')
     ]
 )
+
+require "spree/testing_support/factories"
+require "carmen"
+
+Dir[Rails.root.join("spec", "support", "factories", "**", "*.rb")].each { |f| require f }
+
+FactoryBot.find_definitions
